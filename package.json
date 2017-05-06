@@ -1,0 +1,16 @@
+{
+  "name": "repartitor",
+  "version": "0.0.1",
+  "description": "A package to make repartition easier on an array of objects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "repartition",
+    "partition",
+    "algorithm"
+  ],
+  "author": "Valentin Roudge <v.roudge@gmail.com> (http://js.ninja/)",
+  "license": "ISC"
+}
