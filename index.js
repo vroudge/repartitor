@@ -36,8 +36,6 @@ Repartitor.prototype.run = function (repartitionField, names, stackSize, recurse
         usedStackSize = this.stackSize;
     }
 
-    console.log(repartitionField, names, stackSize);
-
     var expectedFinalSize = usedNames.length * usedStackSize;
 
     if (results.length === expectedFinalSize) {
@@ -122,40 +120,5 @@ if (!Array.prototype.includes) {
         }
     });
 }
-
-/*const kek = [
-    { name: 'kek', id: 1 },
-    { name: 'kek', id: 2 },
-    { name: 'lol', id: 11 },
-    { name: 'lol', id: 12 },
-    { name: 'lol', id: 13 },
-    { name: 'kek', id: 3 },
-    { name: 'kek', id: 4 },
-    { name: 'kek', id: 5 },
-    { name: 'lol', id: 16 },
-    { name: 'lol', id: 17 },
-    { name: 'lol', id: 18 },
-    { name: 'kek', id: 6 },
-    { name: 'kek', id: 7 },
-    { name: 'kek', id: 8 },
-    { name: 'kek', id: 9 },
-    { name: 'lol', id: 10 },
-    { name: 'rofl', id: 25 },
-    { name: 'lol', id: 14 },
-    { name: 'lol', id: 15 },
-    { name: 'lol', id: 19 },
-    { name: 'lol', id: 20 },
-    { name: 'lol', id: 21 },
-    { name: 'lol', id: 22 },
-    { name: 'lol', id: 23 },
-    { name: 'lol', id: 24 },
-    { name: 'rofl', id: 26 },
-];
-
-var lolol = new Repartitor({ targetArray: kek, field: 'name', useAllPropertiesValues: true, stackSize: 3 }).run();
-var kekek = new Repartitor({ targetArray: kek }).run('name', ['kek', 'lol', 'rofl'], 3);
-console.log(lolol);
-console.log(kekek);*/
-
 
 module.exports = Repartitor;
